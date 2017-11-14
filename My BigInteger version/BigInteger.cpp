@@ -75,7 +75,8 @@ namespace {
 	}
 }
 
-BigInteger::BigInteger(long  x) : sign(signOf(x)), mag(magOf<long , unsigned long >(x)) {}
+BigInteger::BigInteger(long  x) : sign(signOf(x)), mag(magOf<long, unsigned long >(x)) {}
+BigInteger::BigInteger(long long  x) : sign(signOf(x)), mag(magOf<long, unsigned long >(x)) {}
 BigInteger::BigInteger(int   x) : sign(signOf(x)), mag(magOf<int  , unsigned int  >(x)) {}
 BigInteger::BigInteger(short x) : sign(signOf(x)), mag(magOf<short, unsigned short>(x)) {}
 
